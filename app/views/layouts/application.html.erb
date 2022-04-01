@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>WebCampBackendNew</title>
-    <meta name="csrf-param" content="authenticity_token">
-    <meta name="csrf-token" content="OVptRZBOgK6SJYcBrg9Am3XW1a4xtaA+5SUJcosErB4XFEJdv5ExuoC2bNZvYcpmwtClL4GbR5V2p4YU0b/5Yg==">
+<head>
+
 
     <link rel="stylesheet" media="all" href="/assets/application-d12397cbc3a266ce5a99f7b588223090c55ca04a439953bb5f9304395de93fc3.css" data-turbolinks-track="reload">
     <script src="/assets/application-114264dd93c8ff30e4335b71eed7949d66c4e7a8eb62e2de6284c046fe07104b.js" data-turbolinks-track="reload"></script>
+    <title>WebCampBackendNew</title>
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token" content="1sPyYrjmxwbgKn/RqJblO8hIwqIIMHhl0ZfB7mCzt1T4jd16lzl2EvK5lAZp+G/Gf06yI7gen85CFU6IOgjiKA==">
+</head>
 
-
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
 
   <body>
-
     <p id="notice"></p>
 
     <h1>Books</h1>
@@ -32,13 +25,61 @@
       </thead>
 
       <tbody>
-        <tr></tr>
+          <tr>
+            <td>リーダブルコード</td>
+            <td>より良いコードを書くためのシンプルで実践的なテクニック</td>
+            <td><a class="show_61971" href="/books/61971">Show</a></td>
+            <td><a class="edit_61971" href="/books/61971/edit">Edit</a></td>
+            <td><a data-confirm="Are you sure?" class="destroy_61971" rel="nofollow" data-method="delete" href="/books/61971">Destroy</a></td>
+          </tr>
+          <tr>
+            <td>トラブル知らずのシステム設計</td>
+            <td>システム設計の要点を図解で説明してくれます</td>
+            <td><a class="show_61972" href="/books/61972">Show</a></td>
+            <td><a class="edit_61972" href="/books/61972/edit">Edit</a></td>
+            <td><a data-confirm="Are you sure?" class="destroy_61972" rel="nofollow" data-method="delete" href="/books/61972">Destroy</a></td>
+          </tr>
+          <tr>
+            <td>たのしいRuby</td>
+            <td>Rubyの入門におすすめです</td>
+            <td><a class="show_61973" href="/books/61973">Show</a></td>
+            <td><a class="edit_61973" href="/books/61973/edit">Edit</a></td>
+            <td><a data-confirm="Are you sure?" class="destroy_61973" rel="nofollow" data-method="delete" href="/books/61973">Destroy</a></td>
+          </tr>
+          <tr>
+            <td>入門Git</td>
+            <td>gitについての基本操作から内部構造まで解説してくれます</td>
+            <td><a class="show_61974" href="/books/61974">Show</a></td>
+            <td><a class="edit_61974" href="/books/61974/edit">Edit</a></td>
+            <td><a data-confirm="Are you sure?" class="destroy_61974" rel="nofollow" data-method="delete" href="/books/61974">Destroy</a></td>
+          </tr>
+          <tr>
+            <td>アルゴリズム図鑑</td>
+            <td>アルゴリズムについてカラーイラストでしっかり解説してくれます</td>
+            <td><a class="show_61975" href="/books/61975">Show</a></td>
+            <td><a class="edit_61975" href="/books/61975/edit">Edit</a></td>
+            <td><a data-confirm="Are you sure?" class="destroy_61975" rel="nofollow" data-method="delete" href="/books/61975">Destroy</a></td>
+          </tr>
+          <tr>
+            <td>達人プログラマー</td>
+            <td>プログラマ入門者は必読！</td>
+            <td><a class="show_61976" href="/books/61976">Show</a></td>
+            <td><a class="edit_61976" href="/books/61976/edit">Edit</a></td>
+            <td><a data-confirm="Are you sure?" class="destroy_61976" rel="nofollow" data-method="delete" href="/books/61976">Destroy</a></td>
+          </tr>
+          <tr>
+            <td>データベース実践入門</td>
+            <td>効率的なSQL文を教えてくれます</td>
+            <td><a class="show_61977" href="/books/61977">Show</a></td>
+            <td><a class="edit_61977" href="/books/61977/edit">Edit</a></td>
+            <td><a data-confirm="Are you sure?" class="destroy_61977" rel="nofollow" data-method="delete" href="/books/61977">Destroy</a></td>
+          </tr>
       </tbody>
     </table>
 
 
     <h2>New book</h2>
-    <form class="new_book" id="new_book" action="/books" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="OVptRZBOgK6SJYcBrg9Am3XW1a4xtaA+5SUJcosErB4XFEJdv5ExuoC2bNZvYcpmwtClL4GbR5V2p4YU0b/5Yg==">
+    <form class="new_book" id="new_book" action="/books" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="imaRZWnarKKXVE8xnnoQF65agoMjawyV/ITkCxjmzKSlaYVLU0Gp5FtZzGM8yLXec54OWsXVEfbGIGYvvbZ+dg==">
 
       <div class="field">
         <label for="book_title">Title</label>
@@ -54,8 +95,6 @@
         <input type="submit" name="commit" value="Create Book" data-disable-with="Create Book">
       </div>
     </form>
-
-
     <%= yield %>
   </body>
 </html>
