@@ -4,10 +4,11 @@
   <%= f.text_field :title %>
   <h5>Body</h5>
   <%= f.text_area :body %>
-
+  
   <%= f.submit 'Update Book'%>
+
+  <%= link_to "Show", Book.find(params[:id]) %>
+  |
+  <%= link_to "Back", index_book_path(@book) %>
 <% end %>
 
-<a class="show" href="/books">Show</a>
-
-<a class="back" href="/books">Back</a>
